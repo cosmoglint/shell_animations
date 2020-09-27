@@ -5,14 +5,14 @@ echo "hi there!"
 #
 # H=5
 # echo $H
-
+read -p "which animation ? (dandelion or pianist)" fold
 
 n=5
 i=1
 
 while :
 do
-  cat "frame${i}"
+  cat "${fold}/frame${i}"
   sleep 0.2
   clear
   let j="($i + 1) % 5"
