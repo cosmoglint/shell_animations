@@ -15,7 +15,7 @@ i=1
 while :
 do
   cat "${fold}/frame${i}"
-  sleep 0.2
+  sleep 0.1
   clear
   let j="($i + 1) % $n"
   i="${j}"
