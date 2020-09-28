@@ -17,6 +17,6 @@ do
   cat "${fold}/frame${i}"
   sleep 0.2
   clear
-  let j="($i + 1) % 5"
+  let j="($i + 1) % $n"
   i="${j}"
 done
