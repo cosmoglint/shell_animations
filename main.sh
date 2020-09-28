@@ -5,10 +5,12 @@ echo "hi there!"
 #
 # H=5
 # echo $H
-read -p "which animation ? (dandelion or pianist)" fold
+read -p "which animation ? (dandelion or pianist or space)" fold
 
-n=5
+
+n=$(ls $fold | wc -l)
 i=1
+# echo $n
 
 while :
 do
